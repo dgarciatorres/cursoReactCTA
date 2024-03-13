@@ -6,9 +6,9 @@ function App() {
   const name = "Diego"
   return (
     <>
-      <Calendar/>
+      <User />
+      <Calendar />
       <Array />
-      <User/>
       <div>Hello {name}</div>
     </>
   );
