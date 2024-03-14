@@ -6,4 +6,5 @@ export default function User(){
     }
 
     return (<div> User: {user}</div>)
+
 }

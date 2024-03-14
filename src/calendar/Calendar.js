@@ -1,4 +1,5 @@
-import  './Calendar.css'
+import  './Calendar.css';
+import Day from '../day/Day.js';
 
 function* getDays(){
     for(let i=0; i<31;i++){
@@ -7,10 +8,19 @@ function* getDays(){
 }
 
 export default function Calendar(){
+
+    // function handelClick(ev){
+    //    console.log(ev.target.textContent);   
+    // }
+
+    function handlerDay(day){
+        console.log(day)
+    }
+
     const days = [...getDays()] // spread operator y lo combierte en un array
     return(
         <div class="calendar">
-            {days.map(day=><div className={(day)%7===0||(day+1)%7===0?'oscuro':'day'} key={day}>{day}</div>)}
+            {days.map(day=><Day kay={day} {...{day,handlerDay}}/>)}
         </div>
     )
 }
