@@ -1,0 +1,9 @@
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7,1.5rem);
+    gap: 1rem;
+}
+
+/* grid tengo dos dimensiones y flex solo 1 */
+
+
