@@ -4,6 +4,7 @@
 // import ArrayState from "./arraystate/ArrayState";
 // import Timer from "./timer/Timer";
 // import Parent from "./children/Parent";
+import Carrito from "./fetch/Carrito";
 import Fetch from "./fetch/Fecth";
 
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Fetch/>
+      <Carrito />
 
       {/* <Parent/>
       <Timer/>

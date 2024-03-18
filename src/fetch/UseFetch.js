@@ -10,7 +10,7 @@ export function UseFetch(url,initialValue){
         fetch(url)
             .then(response=>response.json()) // primero tenemos que tranformar el response del fetch a json
             .then(data=>setData(data)) // ahora devolvemos los datos
-            .catch(error=>setError(error))
+            .catch(error=>setError(error)) // esto no vale porque no capturará nunca un error mirar el github https://github.com/Iarlvarezro/Pizzeria-GNT-Frontend 
             .finally(()=> setLoading(false))
     },[url])
 
