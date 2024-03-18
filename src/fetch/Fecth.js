@@ -18,7 +18,7 @@ export default function Fetch() {
         return <div>{error}</div>
     }
 
-    function handleClick(ev) {
+    function handlerClick(ev) {
         ev.stopPropagation(); // para el 
 
         const node = ev.nativeEvent.composedPath() // busca y saca el id del dataset
@@ -30,7 +30,7 @@ export default function Fetch() {
         }
     }
 
-    return <div onClick={handleClick}>
+    return <div onClick={handlerClick}>
         {/* para poder escribir js dentro del react tengo que meterlo entre llaves*/}
         {data.map(({ id, name, price }) => { // desestructurar el objeto
             return (<div key={id}>

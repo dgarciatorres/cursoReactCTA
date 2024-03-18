@@ -8,11 +8,13 @@ export default function Carrito(){
             data.push(ev.detail)
             setData([...data])
         }
-            window.addEventListener("carrito", handlerCarrito);
-            return () => window.removeEventListener("carrito",handlerCarrito)
+        window.addEventListener("carrito", handlerCarrito);
+        return () => window.removeEventListener("carrito",handlerCarrito)
     })
 
     return (
-        <div> Carrito: {data.length}</div>
+        <>  
+            <div> Carrito: {data.length}</div>
+        </>
     )
 }
