@@ -4,18 +4,22 @@
 // import ArrayState from "./arraystate/ArrayState";
 // import Timer from "./timer/Timer";
 // import Parent from "./children/Parent";
-import Carrito from "./fetch/Carrito";
-import Fetch from "./fetch/Fecth";
+// import Acordeon from "./acordeon/Acordeon";
+// import Carrito from "./fetch/Carrito";
+// import Fetch from "./fetch/Fecth";
+import Form from "./form/Form";
 
 
 function App() {
   const name = "Diego"
   return (
     <>
-      <Fetch/>
+      <Form/>
+      {/* <Fetch/>
       <Carrito />
+      <Acordeon />
 
-      {/* <Parent/>
+      <Parent/>
       <Timer/>
       <ArrayState/>
       <Counter />
