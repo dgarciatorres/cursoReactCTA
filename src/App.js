@@ -7,14 +7,16 @@
 // import Acordeon from "./acordeon/Acordeon";
 // import Carrito from "./fetch/Carrito";
 // import Fetch from "./fetch/Fecth";
-import Form from "./form/Form";
+// import Form from "./form/Form";
+import RoutesApp from "./pages/RoutesApp"
 
 
 function App() {
   const name = "Diego"
   return (
     <>
-      <Form/>
+      <RoutesApp/>
+      {/* <Form/>
       {/* <Fetch/>
       <Carrito />
       <Acordeon />
