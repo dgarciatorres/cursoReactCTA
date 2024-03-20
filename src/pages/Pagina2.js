@@ -9,7 +9,7 @@ export default function Pagina2(){
     // }, [initial]);
     // [name: "pedro", page: "1", size: "25"]
 
-    const result = [...data[0]].reduce((a,v)=>{ // coge el primer objeto
+    const result = [...data[0]].reduce((a,v)=>{ // coge el primer elemento del array a un array de dos dimensiones
         a[v[0]] = v[1]
         return a;
     }, {}) // primera vuelta es un objeto vacio
